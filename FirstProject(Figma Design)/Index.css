@@ -1,0 +1,163 @@
+body {
+    background-color: gray;
+}
+
+ul {
+    list-style-type: none;   
+    margin: 0;
+    padding: 0;
+}
+
+#FirstNav ul {
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px; 
+}
+
+#FirstNavLeft {
+    display: flex;
+}
+
+#FirstNavLeft li {
+    margin-left: 20px;
+}
+
+#FirstNavRight {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div.logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.div.logo > img {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+}
+
+#SecondNav ul {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+}
+
+#SecondNav ul > li {
+    margin: 20px; 
+}
+
+#CardContainer {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.Card {
+    padding-left: 20px;
+    height: 300px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.Card img {
+    width: 100%; 
+    height: auto; 
+    max-width: 200px; 
+}
+
+footer div ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+footer div ul > li p {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    display: flex;
+    align-items: center;
+}
+
+footer div ul li p span {
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+footer div ul li p > img {
+    width: 30px;
+    height: 30px;
+}
+
+ul li:hover {
+    background-color: white;
+    border-radius: 20px;
+}
+
+ul li p::first-line {
+    font-weight: bolder;
+}
+
+
+@media (max-width: 600px) {
+    #FirstNav ul {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    #FirstNavLeft li {
+        margin-left: 10px;
+        margin-bottom: 10px; 
+    }
+
+    #FirstNavRight {
+        flex-direction: row; 
+        justify-content: space-between;
+     
+    }
+
+    #SecondNav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    #SecondNav ul > li {
+        margin: 10px 0; 
+    }
+
+    #CardContainer {
+        grid-template-columns: 1fr; 
+    }
+
+    .Card {
+        padding: 10px; 
+        height: auto; 
+    }
+
+    footer div ul {
+        flex-direction: row; 
+        align-items: center; 
+    }
+
+    footer div ul > li {
+        margin-bottom: 10px; 
+    }
+
+    .div.logo > img {
+        max-width: 100%;
+    }
+}

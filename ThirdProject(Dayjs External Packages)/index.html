@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time Display</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/micromodal/dist/micromodal.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Current Time</h1>
+        <div id="timeDisplay">Loading...</div>
+        <button id="timezoneButton">Change Timezone</button>
+    </div>
+
+    <div class="modal micromodal-slide" id="timezoneModal" aria-hidden="false">
+        <div class="modal__overlay">
+            <div class="modal__container">
+                <header class="modal__header">
+                    <h2 class="modal__title">Enter Timezone</h2>
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                </header>
+                <main class="modal__content">
+                    <input type="text" id="timezoneInput" placeholder="e.g. America/New_York" />
+                </main>
+                <footer class="modal__footer">
+                    <button id="confirmTimezone">Confirm</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
