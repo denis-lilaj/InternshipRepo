@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styling/home.css">
+    <script src="../Javascript/projectDescription.js"></script>
+</head>
+
+<body>
+    <div id="particles-js" style="position: absolute; width: 100%; height: 100%;"></div>
+    <header id="HomeAnchor">
+        <div id="HeaderContainer" id>
+            <div class="hdiv leftSide">
+                    
+                <img src="../Assets/Images/HeaderIcon.png" alt="">
+                <h5>My Portfolio</h5>
+            </div>
+            <div class="midSide">
+                <ul>
+                    <li><a href="#HomeAnchor"><button>Home</button></a></li>
+                    <li><a href="#AboutAnchor"><button>About</button></a></li>
+                    <li><a href="../StaticPages/projects.html"><button>Github Projects</button></a></li>
+                    <li><a href="#ContactAnchor"><button>Contact</button></a></li>
+                </ul>
+            </div>
+            <div class="hdiv rightSide">
+                <img src="../Assets/Images/Facebook.png" alt="">
+                <img src="../Assets/Images//Twitter.png" alt="">
+                <img src="../Assets/Images/LinkedIn.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <div class="Intro">
+        <img src="../Assets/Images/Developer.png" alt="">
+    </div>
+    <div class="Description">
+        <h3>.NET Developer Expanding Skills in React, Next.js, and Nest.js</h3>
+        <p>As a seasoned .NET developer with a growing expertise in React, and a keen interest in Next.js and Nest.js, I'd be happy to help you craft a software development description that highlights your skills and versatility.
+
+            Summary: Highly motivated and detail-oriented software developer with a strong foundation in .NET, currently expanding my skill set to include React, Next.js, and Nest.js. 
+            Proficient in designing, developing, and deploying scalable, efficient, and reliable software solutions. Adept at collaborating with cross-functional teams to deliver high-
+            quality products that meet business requirements.</p>
+    </div>
+    <h2 id="ProjectsH2">Projects</h2>
+    <div class="Projects">
+          <div class="Project">
+              <img src="../Assets/Images/ClusteringAI.jpg" alt="">
+              <p>Car Recommendation System (#Machine Learning Model)</p>
+              <button id="ClusteringAIB">Find out more</button>
+          </div>
+          <div class="Project">
+              <img src="../Assets/Images/AuctionWebApp.jpg" alt="">
+              <p>Auction Web App in .Net(WEB API)</p>
+              <button id="AuctionWebAppB">Find out more</button>
+          </div>
+          <div class="Project">
+              <img src="../Assets/Images/CarRentalWebApp.png" alt="">
+              <p>Car Rental Web App in .Net(MVC Architecture)</p>
+              <button id="CarRentalWebAppB">Find out more</button>
+          </div>
+          <div class="Project">
+              <img src="../Assets/Images/OpenWeatherAPI.png" alt="">
+              <p>Weather App using React and OpenWeatherAPI</p>
+              <button id="OpenWeatherAPIB">Find out more</button>
+          </div>
+    </div>
+    <h2>Experience</h2>
+       <div id="ExperienceContainer">
+            <div class="Experience">
+               <div class="TitleExperience"><img src="../Assets/Images/IKubLogo.jpg" alt=""><h4>Intern at IkubINFO (March 2024 – May 2024)</h4></div>
+                 <ul>
+                       <li>Built an auction web application with features like auction creation, bid management, and notifications.</li>
+                       <li>Secured API communications using JSON Web Tokens (JWT) and implemented global error handling.</li>
+                       <li>Applied clean architecture with CQRS (Command Query Responsibility Segregation) and mediator pattern for maintainable code.</li>
+                       <li>Developed web APIs, validated Data Transfer Objects (DTOs), and maintained data integrity through dependency injection.</li>
+                 </ul>
+            </div>
+            <div class="Experience">
+               <div class="TitleExperience"><img src="../Assets/Images/IKubLogo.jpg" alt=""><h4>Trainee at IkubINFO Academy (December 2023 – March 2024)</h4></div>
+                 <ul>
+                       <li>Developed a car rental system with vehicle booking and payment processing features.</li>
+                       <li>Improved data retrieval efficiency using DbContext for database interactions.</li>
+                       <li>Enhanced security by implementing authentication and authorization via Entity Framework.</li>
+                       <li>Followed layered architecture, MVC pattern, and applied dependency injection for code maintainability.</li>
+                </ul>
+            </div>
+     </div>
+
+     <h2>About</h2>
+        <div id="AboutAnchor" class="AboutContainer">
+           <div class="border">
+                <img src="../Assets/Images/DownloadLogoCV.jpg" alt="">
+                <a href="../DenisResumeFin.pdf" download>
+                <button>Download CV</button> </a>
+                <h4>Click the button to download CV in PDF format</h4>
+          </div>
+        </div>
+
+     <footer>
+        <h2>Contact Info</h3>
+        <div id="ContactAnchor" class="ContactInfo">
+             <p>Denis Lilaj <br>
+                 Tirana, Albania <br>
+                 Email: denislilaj30@gmail.com <br>
+                 Phone: +355685556498 <br>
+                 LinkedIn | GitHub <br>
+                 
+                 I am a skilled software developer with experience in building web applications, specializing in clean architecture, API security, and system efficiency. 
+                 I have developed solutions for auction platforms and car rental systems, 
+                 leveraging tools like .NET, Entity Framework, and JWT for secure and scalable development.
+             </p>
+        </div>
+     </footer>
+     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+     <script src="../Javascript/script.js"></script>
+
+</body>
+</html>
+
+<script>
+    document.addEventListener('click', function(event) {
+        if (event.target.tagName === 'BUTTON') {
+            const clickedButton = event.target;
+            if(event.target.id!="")
+            {
+               window.location = `projectDescription.html?name=${encodeURIComponent(clickedButton.id.toString())}`;
+            }
+        }
+    })
+</script>
+        
+

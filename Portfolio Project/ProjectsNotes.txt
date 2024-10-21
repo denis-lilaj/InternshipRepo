@@ -1,0 +1,36 @@
+Car Rental System with Clustering Algorithm
+This advanced car rental system integrates machine learning to provide optimized vehicle recommendations. By applying a clustering algorithm, the system categorizes rental vehicles based on customer inputs such as car type, rental duration, price range, and other preferences. The model is trained using a CSV dataset containing historical rental data, allowing it to accurately group vehicles into clusters that match customer profiles. Users interact with the system through Django forms, which feed input data into the clustering model. The output is displayed in a user-friendly interface on a car business-themed webpage, showcasing rental options in distinct categories like economy, luxury, and family vehicles. The system improves business operations by automating the car selection process, making it more personalized and data-driven, which ultimately enhances customer satisfaction and drives higher booking rates.
+Key technologies:
+Django Framework: For handling form inputs and backend logic.
+Clustering Algorithm: Groups vehicles based on customer preferences.
+Machine Learning Model: Trained on a CSV file to optimize vehicle recommendations.
+Responsive Design: Provides a smooth user experience across devices.
+
+
+Auction Web App with Real-time Notifications
+This Auction Web App is built to offer a seamless and secure platform for auction creation and management. It supports various features like real-time notifications to alert auction creators of new bids or price changes, ensuring they stay updated on their listings. Users can create, approve, or cancel auctions, while the system monitors whether an auction is live or upcoming based on its scheduled start time. Built using the .NET Web API framework, the application incorporates JWT (JSON Web Token) authentication for securing user sessions and protecting API endpoints. A code-first approach is utilized to design the database schema, while DbContext handles communication between the application and the database. The app’s layered architecture ensures that each feature, from data validation to business logic, is decoupled and easily maintainable.
+Key features:
+JWT Authentication: Ensures secure user login and API communication.
+Real-time Notifications: Alerts auction creators about bid changes and price updates.
+Auction Control: Allows users to create, approve, cancel, and check auction statuses.
+Scalable Architecture: Follows a layered structure, utilizing controllers for handling requests and CQRS for improving performance and scalability.
+Entity Framework: Facilitates database interaction with a code-first approach.
+
+
+Car Rental System with MVC Architecture and Razor Pages
+This car rental system is built using the MVC (Model-View-Controller) architectural pattern, providing a robust framework for managing car rentals efficiently. The application offers full CRUD (Create, Read, Update, Delete) functionality, allowing users to browse, book, modify, and manage rental details seamlessly. The system integrates Razor pages for dynamic content generation, enabling quick access to the vehicle inventory and rental history. Built with scalability in mind, the project follows a layered architecture that separates concerns, making it easy to maintain and expand. The UI is designed for both administrators and customers, featuring intuitive controls for booking vehicles and reviewing past transactions. The system also includes detailed error handling and data validation to ensure accurate bookings and secure transactions.
+Key elements:
+MVC Architecture: Provides a structured approach to handling requests and organizing business logic.
+Razor Pages: For generating dynamic content based on user interactions.
+CRUD Operations: Allows for seamless management of car listings and rental transactions.
+Database Integration: Ensures real-time updates on car availability and rental history.
+Responsive UI: Designed to offer an intuitive experience for both administrators and end users, improving operational efficiency.
+
+
+OpenWeather API Project with React
+In this simple weather application, React is used to fetch and display weather data from the OpenWeather API. Users can search for any city or country, and the app provides real-time, hourly weather information such as temperature, humidity, wind speed, and atmospheric pressure. The search feature allows users to quickly access weather updates by typing in a location, and the weather data is displayed in an organized, user-friendly format with modern UI components. The page dynamically updates as the user interacts with the search input, making it a seamless experience for checking weather conditions. The layout includes a search bar at the top, followed by detailed weather cards showing hourly forecasts.
+Technologies:
+React: For building the interactive user interface and handling state.
+OpenWeather API: To retrieve real-time weather data for the searched location.
+Axios/Fetch API: For making API calls and managing data requests.
+Responsive Design: Ensures the app looks great across different devices.

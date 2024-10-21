@@ -1,0 +1,135 @@
+body {
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: grey;
+    font-family: Arial, sans-serif;
+}
+
+.HeaderContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.HeaderContainer img {
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#GridTemplate {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.listContainer {
+    list-style: none;
+    width: 100%;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.listContainer:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.02);
+}
+
+.listContainer li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+span {
+    font-weight: normal;
+}
+
+button {
+    height: 35px;
+    width: 100px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#Pagination {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#Pagination button {
+    margin: 0 10px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#Pagination button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 1024px) {
+    .HeaderContainer img {
+        width: 20%;
+    }
+
+    #GridTemplate {
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 30px; 
+    }
+
+    .listContainer {
+        padding: 15px;
+    }
+
+    button {
+        width: 80px;
+    }
+
+    #Pagination button {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .HeaderContainer img {
+        width: 30%;
+    }
+
+    #GridTemplate {
+        grid-template-columns: 1fr; 
+        margin: 0 10px;
+    }
+
+    button {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    #Pagination button {
+        padding: 10px 15px;
+    }
+}
